@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stream Player</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+
+    background-image:url("background.jpg"); /* your image */
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+/* header */
+header{
+    height:60px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    font-size:20px;
+    font-weight:bold;
+    background:rgba(123,31,162,0.85);
+}
+
+/* center container */
+.main{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* input container */
+.container{
+    text-align:center;
+}
+
+/* input */
+input{
+    width:260px;
+    padding:12px;
+    font-size:16px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    outline:none;
+}
+
+/* button */
+button{
+    margin-top:16px;
+    padding:10px 26px;
+    font-size:16px;
+    border:none;
+    border-radius:8px;
+    background:#7b1fa2;
+    color:white;
+    cursor:pointer;
+}
+
+/* footer */
+footer{
+    height:50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-size:14px;
+    background:rgba(123,31,162,0.85);
+}
+
+</style>
+
+<script>
+
+function sendText(){
+
+    var text = document.getElementById("inputBox").value;
+
+    if(window.Android){
+        Android.showToast(text);
+    }
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<header>
+Stream Player
+</header>
+
+<div class="main">
+
+<div class="container">
+
+<input type="text" id="inputBox" placeholder="Enter text">
+
+<br>
+
+<button onclick="sendText()">Send</button>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 Stream App
+</footer>
+
+</body>
+<script async="async" data-cfasync="false" src="https://pl16698809.profitablecpmratenetwork.com/7bf74110601a7af5e84126f8790ba9ae/invoke.js"></script>
+<div id="container-7bf74110601a7af5e84126f8790ba9ae"></div>
+</html>
