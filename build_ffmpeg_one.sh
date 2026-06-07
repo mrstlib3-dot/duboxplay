@@ -7,7 +7,7 @@ mkdir $HOME/ffmpeg-kit
 
 cd $HOME/ffmpeg-kit
 
-https://dl.google.com/android/repository/android-ndk-r27d-linux.zip
+wget https://dl.google.com/android/repository/android-ndk-r27d-linux.zip
 
 unzip android-ndk-r27d-linux.zip
 
